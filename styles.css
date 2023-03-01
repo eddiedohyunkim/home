@@ -184,6 +184,7 @@ section, article{
 	max-width: 34rem;
 	margin:auto;
 	word-wrap: break-word;
+	hyphens: none;
 	margin-bottom: 2em;
 }
 
