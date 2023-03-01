@@ -168,21 +168,28 @@ a{
 	transform: scaleY(1.0);
 	margin-bottom:-2px;
 }*/
+a:after, [item]:after{
+	font-size: 12px;
+	padding-left: 17px;
+	background-repeat: no-repeat;
+	background-size: 17px 17px;
+	width:auto;
+	display: inline-block;
+}
 
-
+a[class=external]:after{
+	content: attr(item);
+	background-image: url('assets/images/arrowUp.svg');
+	background-position: top left;
+	height: 17px;
+}
 
 a[class=local]:after, [item]:after{
 	content: attr(item);
-	font-size: 12px;
 	vertical-align: 8px;
-	padding-left: 17px;
 	background-image: url('assets/images/arrowDown.svg');
-	background-repeat: no-repeat;
-	background-size: 17px 17px;
 	background-position: top 5px left;
 	height: 22px;
-	width:auto;
-	display: inline-block;
 }
 @media all and (max-width: 34em) { 
 	a[class=local]:after, [item]:after{

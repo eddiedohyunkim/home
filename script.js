@@ -66,7 +66,7 @@ function reportSign(){
 	var signArray = [...signList];
 	signArray.forEach(sign => {
 		let signFor = (sign.getAttribute("for")),
-		aProject = document.querySelector(`[category=${signFor}]`);
+		aProject = document.querySelector(`[id=${signFor}]`);
 		sign.style.setProperty("--item", getYdistBtw(sign, aProject)+"px");
 		sign.setAttribute('item', getYdistBtw(sign, aProject)+"px");
 		// sign.classList.add('local');
