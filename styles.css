@@ -307,8 +307,12 @@ table * {
 	text-align: left;
 }
 td, th{
-	padding:0.1rem 0.4rem 0.15rem 0.4rem;
+	padding:0.1rem 0.3rem 0.15rem 0.3rem;
 	border-bottom: 1px solid #000;
+}
+tr td:first-child{
+	width:100%;
+/*	text-align: right;*/
 }
 tr:first-child{
 	border-top: 1px solid #000;
