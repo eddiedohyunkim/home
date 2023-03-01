@@ -145,11 +145,10 @@ a:after{
 	content: "";
 	background-image: url('assets/images/arrowDown.svg');
 	background-repeat: no-repeat;
-	background-size: 16px 17px;
-	width:16px;
+	background-size: 17px 17px;
+	width:17px;
 	height:17px;
 	display: inline-block;
-	margin-left:1px;
 	transform: scaleY(-1.0);
 }
 
@@ -161,10 +160,10 @@ a[class=local]:after{
 @media all and (max-width: 34em) { 
 	a:after{
 		background-image: url('assets/images/arrowDown16.svg');
-		background-size: 13px 14px;
-		width:13px;
+		background-size: 14px 14px;
+		width:14px;
 		height:14px;
-		margin-left:1px;
+		margin-left:0px;
 	}
 
 	a[class=local]:after{
@@ -181,6 +180,11 @@ abbr{
 }
 sup, sub{
 	font-size: 0.6em;
+}
+@media all and (max-width: 34em) { 
+	sup, sub{
+		font-size: 9px;
+	}
 }
 sub{
 	vertical-align: baseline;
