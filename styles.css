@@ -300,14 +300,14 @@ ul[id="projects-list"] li{
 
 table{
 	margin:0.2em 0px 0.2em 0px;
-	line-height: 1;
+/*	line-height: 1;*/
 	border-top: 1px solid #000;
 }
 table * { 
 	text-align: left;
 }
 td, th{
-	padding:0.2rem 0.4rem 0.25rem 0.4rem;
+	padding:0.1rem 0.4rem 0.15rem 0.4rem;
 	border-bottom: 1px solid #000;
 }
 tr:first-child{
@@ -352,9 +352,9 @@ a:after{
 	content: "";
 	background-image: url('assets/images/arrowDown.svg');
 	background-repeat: no-repeat;
-	background-size: 16px 18px;
+	background-size: 16px 17px;
 	width:16px;
-	height:18px;
+	height:17px;
 	display: inline-block;
 	margin-left:1px;
 /*	margin-right: 1px;*/
