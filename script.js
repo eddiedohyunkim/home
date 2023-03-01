@@ -52,13 +52,25 @@ addEventListenerMulti(window, 'load resize', (event) => {
   reportDocDimension()
 })
 
+// function reportSign(){
+// 	var signList = document.querySelectorAll('.sign');
+// 	var signArray = [...signList];
+// 	signArray.forEach(sign => {
+// 		let signFor = (sign.getAttribute("for")),
+// 		aProject = document.querySelector(`[category=${signFor}]`);
+// 		sign.innerHTML = getYdistBtw(sign, aProject)+"px";
+// 	});
+// }
 function reportSign(){
 	var signList = document.querySelectorAll('.sign');
 	var signArray = [...signList];
 	signArray.forEach(sign => {
 		let signFor = (sign.getAttribute("for")),
 		aProject = document.querySelector(`[category=${signFor}]`);
-		sign.innerHTML = getYdistBtw(sign, aProject)+"px";
+		sign.style.setProperty("--item", getYdistBtw(sign, aProject)+"px");
+		sign.setAttribute('item', getYdistBtw(sign, aProject)+"px");
+		// sign.classList.add('local');
+		// console.log(getYdistBtw(sign, aProject)+"px")
 	});
 }
 	
