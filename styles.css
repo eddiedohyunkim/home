@@ -1,5 +1,5 @@
 :root{
-  --font-size-1: 21px;
+  --font-size-1: 20px;
   --font-size-2: 18px;
   --font-size-3: 15px;
   --font-size-4: 14px;
@@ -7,6 +7,10 @@
   --aSqaured:url('assets/images/aSquared.svg');
   --bSqaured:url('assets/images/bSquared.svg');
   --zSqaured:url('assets/images/zSquared.svg');
+}
+*, * :before{
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 html{ font-size: var(--font-size-1); }
 /*@media all and (max-width: 38em) { html{ font-size: var(--font-size-2); } } 
@@ -34,7 +38,7 @@ body{
 	line-height: 1.2;
 }
 body{
-	padding: 1ex 1em;
+	padding: 0.5em 1em;
 }
 
 /*body article:before{
@@ -225,14 +229,13 @@ ul{
 	padding:0;
 }
 ul > li{
-	padding-left: calc(var(--font-size-1) - 2px );
+	padding-left: 1em;
 }
 
 ul > li{
 	background-image: url('assets/images/lineLeft.svg');
 	background-size: 1px 17px;
 	background-repeat: repeat-y;
-/*	background-position: top left;*/
 }
 ul > li:last-child{
 	background-repeat: no-repeat;
@@ -241,16 +244,16 @@ ul > li:last-child{
 ul > li:before{
 	content: "";
 	background-image: url('assets/images/arrowRight.svg');
-	background-color: #fff;
-	background-repeat: no-repeat;
-	background-size: 16px 17px;
-	width:16px;
-	height:17px;
-	display: inline-block;
+	background-color: white;
+	background-repeat: repeat-y;
+	background-size: 20px 20px;
+	width:20px;
+	height:20px;
 	position: absolute;
-	margin-top: 4px;
-  margin-left: calc(16px * -1 - 3px);
+/*	margin-top: 4px;*/
+  margin-left: calc(var(--font-size-1) * -1);
 }
+
 
 
 
@@ -300,16 +303,9 @@ table{
 table * { 
 	text-align: left;
 }
-table, table caption{
-/*	margin-bottom: 0.2em;*/
-}
-/*table[id='projects-table'] tr td:first-child, table[id='identification'] tr td:last-child{
-	width:100%;
-}*/
-
 td, th{
-	padding:0.1rem 0.4rem;
-	border: thin solid #000;
+	padding:0.1rem 0.4rem 0.15rem 0.4rem;
+	border: 1px solid #000;
 }
 th{
 /*	border-top: 0;*/
@@ -346,9 +342,9 @@ a:after{
 	content: "";
 	background-image: url('assets/images/arrowDown.svg');
 	background-repeat: no-repeat;
-	background-size: 16px 16px;
+	background-size: 16px 18px;
 	width:16px;
-	height:16px;
+	height:18px;
 	display: inline-block;
 	margin-left:1px;
 /*	margin-right: 1px;*/
@@ -364,7 +360,7 @@ abbr{
 	text-decoration: none;
 }
 sup, sub{
-	font-size: 0.55em;
+	font-size: 0.6em;
 }
 sub{
 	vertical-align: baseline;
