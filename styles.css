@@ -298,18 +298,22 @@ ul[id="projects-list"] li{
 
 
 table{
-	margin:0.2em 0px 0.2em 0px;
+	margin:0em 0px 0.2em 0px;
 }
 table * { 
 	text-align: left;
 }
 td, th{
 	padding:0.1rem 0.4rem 0.15rem 0.4rem;
-	border: 1px solid #000;
+	border-bottom: 1px solid #000;
 }
-th{
-/*	border-top: 0;*/
+tr > :first-child{
+	padding-left: 0;
 }
+tr > :last-child{
+	padding-right: 0;
+}
+
 .table-caption{
 /*	margin-bottom: 0.2em;*/
 }
