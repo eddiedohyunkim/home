@@ -1,15 +1,317 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Eddie Kim">
+	<meta name="description" content="">
 	<title>Eddie Kim</title>
-	<!-- <link rel="stylesheet" href="reset.css"> -->
+	<!-- Facebook Open Graph Data -->
+	<!-- https://ogp.me/ -->
+	<meta property="og:title" content="Eddie Kim">
+	<meta property="og:description" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:site_name" content="Eddie Kim">
+	<meta property="og:image" content="">
+	<meta property="og:image:url" content="">
+	<!-- Twitter Cards -->
+	<!-- https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards -->
+	<meta name="twitter:card" content="summary_large_image"></meta>
+
+	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<div>HI</div>
-	<div>This is second div and <span>this is span</span>you got it?</div>
+	<article sectionMark style="--mark: url('assets/images/aSquared.svg')">
+		<h1>Eddie Kim</h1>
+		<ul id="main">
+			<li>Services: Graphic Design
+				<!-- <ul>
+					<li>Websites, Web-Typeface, Publications, Identities, Videos, Logos, Animation</li>
+				</ul>
+ -->				<!-- <ul>
+					<li>Graphic Design
+						<ul>
+							<li>Websites, Web-Typeface, Publications, Identities, Videos, Logos, Animation</li>
+						</ul>
+					</li>
+				</ul> -->
+			</li>
+			<li>Location: New York
+<!-- 				<ul>
+					<li>New York</li>
+				</ul> -->
+			</li>
+			<li>Degree: <abbr title="Bachelor of Fine Arts">BFA</abbr> from Parsons School of Design, 2023
+				<!-- <ul>
+					<li><abbr title="Bachelor of Fine Arts">BFA</abbr> from Parsons School of Design, 2023</li>
+				</ul>
+ -->			</li>
+			<li>Contact
+				<ul>
+					<li onclick="window.location='mailto:eddiekimdohyun@gmail.com';">Email: <a href='mailto:eddiekimdohyun@gmail.com' class="external">eddiekimdohyun&shy;@gmail.com</a><sub class="noselect">write</sub></li>
+					<li onclick="window.location='https://www.instagram.com/_dohyunkim_/';">Instagram: <a href='https://www.instagram.com/_dohyunkim_/' class="external">@eddiekimdohyun</a><sub class="noselect">visit</sub></li>
+				</ul>
+			</li>
+			<li>Additional
+				<ul>
+					<li onclick="window.location='#pdf';"><a href='#pdf' class="external">Curriculum Vitae</a><sub class="noselect">PDF</sub></li>
+					<li>Commercial PDF Available on Request</li>
+				</ul>
+			</li>
+			<li id="project">
+				<h2 class="table-caption">Projects</h2>
+				<table id='projects-table'>
+					<!-- <caption>Index Navigation</caption> -->
+  					<colgroup>
+    					<col id="title">
+    					<col id="type">
+    					<col id="year">
+  					</colgroup>
+  					<tr>
+  						<th scope="col">Title</th>
+  						<th scope="col">Type</th>
+  						<th scope="col">Year</th>
+  					</tr>
+					<tr onclick="window.location='#project1';">
+						<td ><a href="#project1" class="local">Script Type Foundry</a><sup class="sign noselect" for="project1">Down</sup></td>
+						<td>Website</td>
+						<td class="tabular-nums">2023</td>
+					</tr>
+					<tr>
+						<td><a href="#" class="local">Apollo 11 Lunar Sample Catalogue</a><sup class="sign noselect" for="project2">Down</sup></td>
+						<td>Book</td>
+						<td class="tabular-nums">2019</td>
+					</tr>
+					<tr>
+						<td><a href="#" class="local">Generative Logo for Anonymous (hacker group)</a><sup class="sign noselect" for="project3">Down</sup></td>
+						<td>Book</td>
+						<td class="tabular-nums">2019</td>
+					</tr>
+					<tr>
+						<td><a href="#fictional-interface" class="local">Fictional Interface Error Handler</a><sup class="sign noselect" for="project4">Down</sup></td>
+						<td>Video</td>
+						<td class="tabular-nums">2021</td>
+					</tr>
+					<tr>
+						<td><a href="#hba" class="local">Interactive Logo for Shayne Oliver, Hood By Air</a><sup class="sign noselect" for="project5">Down</sup></td>
+						<td>Identity</td>
+						<td class="tabular-nums">2021</td>
+					</tr>
+				</table>
+			</li>
+		</ul>
+	</article>
+	<!-- <section>
+		<table id='identification'>
+			<caption>
+    			Eddie Kim
+  			</caption>
+  			<colgroup>
+    			<col id="title">
+    			<col id="definition">
+  			</colgroup>
+			<tr>
+				<th rowspan="2" scope="rowgroup">Services</th>
+				<td>Graphic Design</td>
+			</tr>
+			<tr>
+				<td>Websites, Web-Typeface, Interfaces, Publications, Identities, Videos, Logos, Animation</td>
+			</tr>
+			<tr>
+				<th cope="row">Location</th>
+				<td>New York City</td>
+			</tr>
+			<tr>
+				<th scope="row">Degree</th>
+				<td><abbr title="Bachelor of Fine Arts">BFA</abbr> from Parsons School of Design, 2023</td>
+			</tr>
+			<tr>
+				<th rowspan="2" scope="rowgroup">Contact</th>
+				<td><a href='mailto:eddiekimdohyun@gmail.com'>eddiekimdohyun&shy;@gmail.com</a></td>
+			</tr>
+			<tr>
+				<td><a href='https://www.instagram.com/_dohyunkim_/'>@eddiekimdohyun</a></td>
+			</tr>
+		</table>
+	</section> -->
+	<!-- <article group="🇧" sectionMark="🄱" num="b">
+		<table id='projects-table'>
+			<caption>Projects Index</caption>
+  			<colgroup>
+    			<col id="title">
+    			<col id="type">
+    			<col id="year">
+  			</colgroup>
+  			<tr>
+  				<th scope="col">Title</th>
+  				<th scope="col">Type</th>
+  				<th scope="col">Year</th>
+  			</tr>
+			<tr onclick="window.location='#project1';">
+				<td><a href="#project1" class="local">Script Type Foundry</a><sup class="sign noselect" for="project1">Down</sup></td>
+				<td>Website</td>
+				<td class="tabular-nums">2023</td>
+			</tr>
+			<tr>
+				<td><a href="#" class="local">Apollo 11 Lunar Sample Catalogue</a><sup class="sign noselect" for="project2">Down</sup></td>
+				<td>Book</td>
+				<td class="tabular-nums">2019</td>
+			</tr>
+			<tr>
+				<td><a href="#" class="local">Generative Logo for Anonymous (hacker group)</a><sup class="sign noselect" for="project3">Down</sup></td>
+				<td>Book</td>
+				<td class="tabular-nums">2019</td>
+			</tr>
+			<tr>
+				<td><a href="#fictional-interface" class="local">Fictional Interface Error Handler</a><sup class="sign noselect" for="project4">Down</sup></td>
+				<td>Video</td>
+				<td class="tabular-nums">2021</td>
+			</tr>
+			<tr>
+				<td><a href="#hba" class="local">Interactive Logo for Shayne Oliver, Hood By Air</a><sup class="sign noselect" for="project5">Down</sup></td>
+				<td>Identity</td>
+				<td class="tabular-nums">2021</td>
+			</tr>
+		</table>
+	</article> -->
+
+
+	<!-- <article sectionMark style="--mark: url('assets/images/bSquared.svg')">
+		<h2 class="table-caption">Projects</h2>
+				<table id='projects-table' >
+  					<colgroup>
+    					<col id="title">
+    					<col id="type">
+    					<col id="year">
+  					</colgroup>
+  					<tr>
+  						<th scope="col">Title</th>
+  						<th scope="col">Type</th>
+  						<th scope="col">Year</th>
+  					</tr>
+					<tr onclick="window.location='#project1';">
+						<td ><a href="#project1" class="local">Script Type Foundry</a><sup class="sign noselect" for="project1">Down</sup></td>
+						<td>Website</td>
+						<td class="tabular-nums">2023</td>
+					</tr>
+					<tr>
+						<td><a href="#" class="local">Apollo 11 Lunar Sample Catalogue</a><sup class="sign noselect" for="project2">Down</sup></td>
+						<td>Book</td>
+						<td class="tabular-nums">2019</td>
+					</tr>
+					<tr>
+						<td><a href="#" class="local">Generative Logo for Anonymous (hacker group)</a><sup class="sign noselect" for="project3">Down</sup></td>
+						<td>Book</td>
+						<td class="tabular-nums">2019</td>
+					</tr>
+					<tr>
+						<td><a href="#fictional-interface" class="local">Fictional Interface Error Handler</a><sup class="sign noselect" for="project4">Down</sup></td>
+						<td>Video</td>
+						<td class="tabular-nums">2021</td>
+					</tr>
+					<tr>
+						<td><a href="#hba" class="local">Interactive Logo for Shayne Oliver, Hood By Air</a><sup class="sign noselect" for="project5">Down</sup></td>
+						<td>Identity</td>
+						<td class="tabular-nums">2021</td>
+					</tr>
+				</table> -->
+
+				
+				<!-- <br> -->
+
+				<!-- <ol>
+					<li sectionMark="ⓐ">
+						<h2>Script Type Foundry</h2>
+						<div class="content-container"></div>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+					</li>
+					<li sectionMark="ⓑ">
+						Apollo 11 Lunar Sample Catalogue
+					</li>
+					<li sectionMark="ⓒ">
+						Project 3
+					</li>
+					<li sectionMark="ⓓ">
+						Project 4
+					</li>
+					<li sectionMark="ⓔ">
+						Project 5
+					</li>
+				</ol> 
+		
+	</article> -->
+
+	<!-- <article group="🇨" sectionMark="🄲" num="c">
+		<h2>Projects Details</h2>
+		<p><span style="display:inline-block; font-size: 0.8em; color:green; margin-right: 0.2rem; font-family: sans-serif;">ⓐ</span>Script Type Foundry</p>
+		<p><span style="display:inline-block; font-size: 0.8em; color:green; margin-right: 0.2rem; font-family: sans-serif;">🄲ⓐ</span>Script Type Foundry</p>
+		<p><span style="display:inline-block; font-size: 0.8em; color:green; margin-right: 0.2rem; font-family: sans-serif;">🄲①</span>Script Type Foundry</p>
+		
+	</article> -->
+
+	<section class="wide" category="project1" id="project1">
+		<h2 sectionMark="ⓐ">Script Type Foundry</h2>
+		<div class="wide-div"></div>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+	</section>
+	<section class="wide" category="project2">
+		<h2 sectionMark="ⓑ">Apollo 11 Lunar Sample Catalogue</h2>
+		<div class="wide-div"></div>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+	</section>
+	<section class="wide" category="project3">
+		<h2 sectionMark="ⓒ">Project 3</h2>
+		<div class="wide-div"></div>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+	</section>
+	<section class="wide" category="project4">
+		<h2 sectionMark="ⓓ">Project 4</h2>
+		<div class="wide-div"></div>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+	</section>
+	<section class="wide" category="project5">
+		<h2 sectionMark="ⓔ">Project 5</h2>
+		<div class="wide-div"></div>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+	</section>
+
+
+	<article sectionMark style="--mark: url('assets/images/zSquared.svg')">
+		<h2><!-- <span id="crossedout"></span> -->Document Metadata<!-- <span>&#9432;</span> --></h2>
+		<ul id="document-metadata-list">
+			<li>Type: HTML</li>
+			<li>
+				<details>
+					<summary>Software</summary>
+					<ul>
+						<li>Browser: <span id="browser">Not Detected</span></li>
+						<li>Operating System: <span id="os">Not Detected</span></li>
+					</ul>
+				</details>
+			</li>
+			
+			<li>Dimensions: <span id="width" class="tabular-nums slsh-zero">0</span>px &times; <span id="height" class="tabular-nums">0</span>px</li>
+			<li>
+				<details>
+					<summary>Assets</summary>
+					<ul>
+						<li>image1.jpg</li>
+						<li>image2.jpg</li>
+						<li>image3.jpg</li>
+						<li>image4.jpg</li>
+						<li>image5.jpg</li>
+					</ul>
+				</details>
+			</li>
+			<li>Language: <span id="language">Not Detected</span></li>
+			<li>Author: Eddie Kim</li>
+			<li>Last Modified: <span id="lastUpdated" class="tabular-nums">Not Detected</span></li>
+		</ul>
+	</article>
 </body>
+<script src="https://unpkg.com/bowser@2.11.0/es5.js"></script>
 <script src="script.js"></script>
 </html>
