@@ -43,6 +43,6 @@ q:before, q:after {
 	content: none;
 }
 table, table caption {
-	border-collapse: collapse;
-	border-spacing: 0;
+/*	border-collapse: collapse;*/
+	border-spacing: 0px;
 }

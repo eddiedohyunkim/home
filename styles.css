@@ -300,6 +300,7 @@ ul[id="projects-list"] li{
 table{
 	margin:0.2em 0px 0.2em 0px;
 	line-height: 1;
+	border-top: 1px solid #000;
 }
 table * { 
 	text-align: left;
@@ -309,7 +310,7 @@ td, th{
 	border-bottom: 1px solid #000;
 }
 tr:first-child{
-	border-top:1px solid;
+	border-top: 1px solid #000;
 }
 tr > :first-child{
 	padding-left: 0;
