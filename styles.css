@@ -138,10 +138,10 @@ tr > :last-child{
 
 @media all and (max-width: 34em) { 
 	table{
-		margin:3px 0px;
+		margin:2px 0px;
 	}
 	td, th{
-		padding:1px 5px 3px 5px;
+		padding:1px 5px 2px 5px;
 	}
 }
 
