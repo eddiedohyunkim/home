@@ -1,20 +1,19 @@
 :root{
   --font-size-1: 20px;
-  --font-size-2: 18px;
+  --font-size-2: 16px;
   --font-size-3: 15px;
   --font-size-4: 14px;
-
-  --aSqaured:url('assets/images/aSquared.svg');
-  --bSqaured:url('assets/images/bSquared.svg');
-  --zSqaured:url('assets/images/zSquared.svg');
 }
 *, * :before{
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
-html{ font-size: var(--font-size-1); }
-/*@media all and (max-width: 38em) { html{ font-size: var(--font-size-2); } } 
-@media all and (max-width: 1010px) { html{ font-size: var(--font-size-3); } } 
+@font-face{
+	font-family: Gerstner-ProgrammMedium;
+	src: url("assets/font/Gerstner-Programm-Medium.otf") format("opentype");
+}
+
+/*@media all and (max-width: 1010px) { html{ font-size: var(--font-size-3); } } 
 @media all and (max-width: 840px) { html{ font-size: var(--font-size-1); } }
 @media all and (max-width: 620px) { html{ font-size: var(--font-size-2); } }
 @media all and (max-width: 500px) { html{ font-size: var(--font-size-3); } }
@@ -28,160 +27,25 @@ html * {
 html {
 	scroll-behavior: smooth;
 }
-@font-face{
-	font-family: Gerstner-ProgrammMedium;
-	src: url("assets/font/Gerstner-Programm-Medium.otf") format("opentype");
-}
+
 body{
 	font-size: var(--font-size-1); 
 	font-family: Gerstner-ProgrammMedium, sans-serif;
 	line-height: 1.2;
 }
+
+html, body{ font-size: var(--font-size-1); }
+@media screen and (max-width: 36em) { 
+	html, body{ font-size: var(--font-size-2); } 
+}
+
+
 body{
 	padding: 0.5em 1em;
 }
 
-/*body article:before{
-	content: attr(num);
-	display: inline-block;
-	position: absolute;
-	text-transform: uppercase;
-	font-size: 0.7em;
-	line-height: 1;
-	min-width:1em;
-	min-height:1em;
-	padding: 0.03rem;
-	text-align: center;
-	outline: 0.05rem solid;
-	margin-left: -1rem;
-	top: 0.3em;
-}*/
-/*[sectionMark]:not([sectionMark=""]){
-	position: relative;
-}
-
-[sectionMark]:not([sectionMark=""]):before{
-	content: attr(sectionMark);
-	font-family: sans-serif;
-	position: absolute;
-	top:0.3em;
-	left:0;
-	display: inline-block;
-	line-height: 1;
-	float: left;
-	font-size: 0.8em;
-	margin-left: -1rem;
-	color:green;
-}*/
-
-
-
-/*[num]:not([num=""]){
-	position: relative;
-}
-
-[num]:not([num=""]):before{
-	content: "";
-	background-image: var(--aSqaured);
-	width:18px;
-	height:18px;
-	position: absolute;
-	left:-21px;
-	top:4px;
-
-	display: inline-block;
-	color:green;
-}*/
-
-
-
-/*[sectionMark]:not([sectionMark=""]):before{
-	content: "";
-	background-image: var(--background);
-	width:18px;
-	height:18px;
-	position: absolute;
-	left:-21px;
-	top:4px;
-
-	display: inline-block;
-	color:green;
-}*/
-
-
-/*[sectionMark]{*/
-/*	position: relative;*/
-/*}*/
-
-/*[sectionMark]:before{
-	content: "";
-	background-image: var(--mark);
-	width:16px;
-	height:16px;
-	background-repeat: no-repeat;*/
-/*	position: absolute;*/
-/*	left:-20px;
-	top:5px;
-}
-*/
-
-
-/*[sectionMarkText]:not([sectionMarkText=""]):before{
-	content: attr(sectionMarkText);
-	font-feature-settings: "case";
-	font-variant-numeric: tabular-nums;
-	position: absolute;
-	border-left: thin solid;
-	border-right: thin solid;
-	border: thin solid;
-	top:0.2em;
-	vertical-align: top;
-	display: inline-block;
-	line-height: 1;
-	float: left;
-	font-size: 0.8em;
-	padding: 0 0.2em;
-	margin-left: -1.1rem;
-	color:green;
-}*/
-
-/*body article:before{
-	content: attr(group);
-	font-family: sans-serif;
-	position: absolute;
-	display: inline-block;
-	line-height: 1;
-	float: left;
-	font-size: 1.1em;
-	margin-left: -1.2rem;
-}*/
-
-/*body article:before{
-		content: attr(num);
-			font-feature-settings: "case"; 
-			text-transform: uppercase;
-	float: left;
-	font-size: 0.9em;
-	margin-left: -1.1rem;
-	margin-right: 0.1em;
-}*/
-
-/*caption:before{
-	content: 'B';
-	display: inline-block;
-	position: absolute;
-	font-size: 0.7em;
-	width:0.75rem;
-	height:0.75rem;
-	text-align: center;
-	border: 0.05rem solid;
-	margin-left: -1rem;
-	top:0.25em;
-	line-height: 1;
-}*/
-
 section, article{
-	max-width: 34rem;
+	max-width: 34em;
 	margin:auto;
 	word-wrap: break-word;
 	hyphens: none;
@@ -189,11 +53,11 @@ section, article{
 }
 
 section[class="wide"]{
-	max-width: 54rem;
+	max-width: 54em;
 /*	outline:1px solid red;*/
 }
 section[class="wide"] h2, section[class="wide"] p{
-	max-width: 34rem;
+	max-width: 34em;
 	margin:auto;
 	margin-bottom: 0.15em;
 }
