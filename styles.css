@@ -233,7 +233,7 @@ ul > li{
 }
 
 ul > li{
-	background-image: url('assets/images/line1x17.jpg');
+	background-image: url('assets/images/lineLeft.png');
 	background-size: 1px 17px;
 	background-repeat: repeat-y;
 }
