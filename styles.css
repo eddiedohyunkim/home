@@ -85,7 +85,7 @@ ul > li:before{
 	content: "";
 	background-image: url('assets/images/arrowRight.svg');
 	background-color: white;
-	background-repeat: repeat-y;
+	background-repeat: no-repeat;
 	background-size: 1em 1em;
 	width:1em;
 	height:1em;
@@ -103,13 +103,16 @@ ul > li:before{
 	ul > li:before{
 		content: "";
 		background-image: url('assets/images/arrowRight16.svg');
+		background-size: 16px 16px;
+		width:16px;
+		height:16px;
 	}
 }
 
 
 
 table{
-	margin:0.15em 0px 0.15em 0px;
+	margin:0.15em 0px;
 	border-top: 1px solid #000;
 }
 table * { 
@@ -131,6 +134,15 @@ tr > :first-child{
 }
 tr > :last-child{
 	padding-right: 0;
+}
+
+@media all and (max-width: 34em) { 
+	table{
+		margin:3px 0px;
+	}
+	td, th{
+		padding:1px 5px 3px 5px;
+	}
 }
 
 
