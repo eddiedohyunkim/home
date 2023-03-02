@@ -203,12 +203,11 @@ a[class=local]:after, [item]:after{
 		height: 9px;
 	}
 	a[class=local]:after, [item]:after{
-		vertical-align: 5px;
-		padding-top: 1px;
+		vertical-align: 6px;
 		background-image: url('assets/images/arrowDown16.svg');
-		background-position: top 2px left;
-		height:15px;
-/*		background-color: red;*/
+		background-position: top 1px left;
+		height:16px;
+		background-color: red;
 	}
 }
 
@@ -302,7 +301,7 @@ sup, sub{
 @media all and (max-width: 34em) { 
 	span[class=sup]{
 		font-size: 9px;
-		vertical-align: 5px;
+		vertical-align: 6px;
 	}
 	sup, sub{
 		font-size: 9px;
