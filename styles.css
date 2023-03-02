@@ -169,6 +169,7 @@ a{
 	margin-bottom:-2px;
 }*/
 a:after, [item]:after{
+	content: attr(item);
 	font-size: 12px;
 	padding-left: 17px;
 	background-repeat: no-repeat;
@@ -178,32 +179,40 @@ a:after, [item]:after{
 }
 
 a[class=external]:after{
-	content: attr(item);
 	background-image: url('assets/images/arrowUp.svg');
 	background-position: top left;
 	height: 17px;
 }
 
 a[class=local]:after, [item]:after{
-	content: attr(item);
 	vertical-align: 8px;
 	background-image: url('assets/images/arrowDown.svg');
 	background-position: top 5px left;
 	height: 22px;
 }
 @media all and (max-width: 34em) { 
-	a[class=local]:after, [item]:after{
+	a:after, [item]:after{
+		content: attr(item);
 		font-size: 9px;
-		vertical-align: 6px;
 		padding-left: 14px;
-		background-image: url('assets/images/arrowDown16.svg');
+		background-repeat: no-repeat;
 		background-size: 14px 14px;
-		background-position: top 3px left;
-		height: 17px;
 		width:auto;
-		margin-left:0px;
+		display: inline-block;
+	}
+	a[class=external]:after{
+		background-image: url('assets/images/arrowUp16.svg');
+		background-position: top left;
+		height:14px;
+	}
+	a[class=local]:after, [item]:after{
+		vertical-align: 6px;
+		background-image: url('assets/images/arrowDown16.svg');
+		background-position: top 3px left;
+		height:17px;
 	}
 }
+
 a[class=local]:not([item=""]):after{
 	content: "Below";
 }
