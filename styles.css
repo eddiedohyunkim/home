@@ -187,18 +187,14 @@ a[class=external]:after{
 a[class=local]:after, [item]:after{
 	vertical-align: 8px;
 	background-image: url('assets/images/arrowDown.svg');
-	background-position: top 5px left;
+	background-position: top 4px left;
 	height: 22px;
 }
 @media all and (max-width: 34em) { 
 	a:after, [item]:after{
-		content: attr(item);
 		font-size: 9px;
 		padding-left: 14px;
-		background-repeat: no-repeat;
 		background-size: 14px 14px;
-		width:auto;
-		display: inline-block;
 	}
 	a[class=external]:after{
 		padding-top: 7px;
@@ -207,15 +203,20 @@ a[class=local]:after, [item]:after{
 		height: 9px;
 	}
 	a[class=local]:after, [item]:after{
-		vertical-align: 6px;
+		vertical-align: 5px;
+		padding-top: 1px;
 		background-image: url('assets/images/arrowDown16.svg');
-		background-position: top 3px left;
-		height:17px;
+		background-position: top 2px left;
+		height:15px;
+		background-color: red;
 	}
 }
 
-a[class=local]:not([item=""]):after{
+a[class=local]:not([item]):after{
 	content: "Below";
+}
+a[class=external]:not([item]):after{
+	content: "Click";
 }
 
 
