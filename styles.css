@@ -302,7 +302,7 @@ sup, sub{
 @media all and (max-width: 34em) { 
 	span[class=sup]{
 		font-size: 9px;
-		vertical-align: 6px;
+		vertical-align: 5px;
 	}
 	sup, sub{
 		font-size: 9px;
