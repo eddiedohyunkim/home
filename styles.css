@@ -208,7 +208,7 @@ a[class=local]:after, [item]:after{
 		background-image: url('assets/images/arrowDown16.svg');
 		background-position: top 2px left;
 		height:15px;
-		background-color: red;
+/*		background-color: red;*/
 	}
 }
 
