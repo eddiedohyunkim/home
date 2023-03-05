@@ -48,7 +48,7 @@ section, article{
 }
 
 section[class="wide"]{
-	max-width: 54em;
+	max-width: 72em;
 /*	outline:1px solid red;*/
 }
 section[class="wide"] h2, section[class="wide"] p{
@@ -114,14 +114,14 @@ ul > li:before{
 
 /* TABLES */
 table{
-	margin:0.15em 0px;
+	margin:0.2em 0px;
 	border-top: 1px solid #000;
 }
 table * { 
 	text-align: left;
 }
 td, th{
-	padding:0.1rem 0.3rem 0.15rem 0.3rem;
+	padding:0.1rem 0.3rem 0.2rem 0.3rem;
 	border-bottom: 1px solid #000;
 }
 tr td:first-child{
@@ -139,10 +139,10 @@ tr > :last-child{
 
 @media all and (max-width: 34em) { 
 	table{
-		margin:2px 0px;
+		margin:3px 0px;
 	}
 	td, th{
-		padding:1px 5px 2px 5px;
+		padding:1px 5px 3px 5px;
 	}
 }
 
