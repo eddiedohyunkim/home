@@ -48,7 +48,7 @@ window.addEventListener('load',(event) => {
 })
 
 addEventListenerMulti(window, 'load resize', (event) => {
-	reportSign()
+	// reportSign()
   reportDocDimension()
 })
 

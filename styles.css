@@ -41,10 +41,10 @@ body{
 
 section, article{
 	max-width: 34em;
-	margin:auto;
+/*	margin:auto;*/
 	word-wrap: break-word;
 	hyphens: none;
-	margin-bottom: 2em;
+	margin-bottom: 1.2em;
 }
 
 section[class="wide"]{
