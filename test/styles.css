@@ -112,23 +112,12 @@ figcaption{
 	width: auto;
 	height: min(50vh, 50vw);
 }
-.v-cont2{
-	width: min(48em, 100vw - 3.6em);
-/*	border: 1px solid;*/
-}
-
-.v-cont2{
-	max-width: 48em;
-	max-height: 36em;
-}
 
 .v-cont{
-	height: min(50vh, 50vw);
-	width: auto;
+/*	height: min(50vh, 50vw);*/
 }
 .if-cont{
 	height: min(50vh, 50vw);
-	width: auto;
 	z-index: -1; /* for carousel scrolling */
 }
 
