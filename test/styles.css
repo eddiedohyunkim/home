@@ -97,8 +97,7 @@ section:last-of-type {
 /* Carousel Slides */
 figure{
 	flex: none;
-	width: fit-content;
-	height: fit-content;
+	max-width: calc(100vw - 3.6em);
 }
 figcaption{
 	font-size: 12px;
@@ -118,9 +117,13 @@ figcaption{
 .v-cont{
 /*	height: min(50vh, 50vw);*/
 }
+figure:has(div.if-cont){
+	min-width: fit-content;
+}
 .if-cont{
 	height: min(50vh, 50vw);
 	z-index: -1; /* for carousel scrolling */
+	border: 2px solid red;
 }
 
 .ar16-9{ aspect-ratio: 16 / 9; }
