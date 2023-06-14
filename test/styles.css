@@ -114,12 +114,6 @@ figcaption{
 	width: auto;
 	height: min(50vh, 50vw);
 }
-.v-cont{
-/*	height: min(50vh, 50vw);*/
-}
-figure:has(div.if-cont){
-	min-width: fit-content;
-}
 .if-cont{
 	height: min(50vh, 50vw);
 	z-index: -1; /* for carousel scrolling */
