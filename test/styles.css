@@ -2,7 +2,7 @@
 	--ts-1-b:18px;
 	--ts-1-s:12px;
 	--ts-2-b:16px;
-	--ts-2-s:12px;
+	--ts-3-b:14px;
 }
 html * {
 	-webkit-text-size-adjust: 100%; 
@@ -21,6 +21,9 @@ html{
 }
 @media all and (max-width: 44em) { 
 	html{ font-size: var(--ts-2-b); } 
+}
+@media all and (max-width: 24em) { 
+	html{ font-size: var(--ts-3-b); } 
 }
 body{
 	font-family: Gerstner-ProgrammMedium-Compacted, sans-serif;
@@ -95,7 +98,6 @@ section:last-of-type {
 figure{
 	flex: none;
 	width: fit-content;
-	max-width: calc(100vw - 3.6em);
 	height: fit-content;
 }
 figcaption{
@@ -107,12 +109,12 @@ figcaption{
 	padding: 0.8em 1em;
 	max-width: 40em;
 	word-wrap: break-word;
+	hyphens: none;
 }
 .i-cont, img{
 	width: auto;
 	height: min(50vh, 50vw);
 }
-
 .v-cont{
 /*	height: min(50vh, 50vw);*/
 }
@@ -125,14 +127,14 @@ figcaption{
 .ar4-5 { aspect-ratio: 4 / 5; }
 .ar216-125{ aspect-ratio: 216 / 125; }
 
-@media all and (max-width: 49em) { 
-	.t-cont, .i-cont, .v-cont, .if-cont{
+@media all and (max-width: 48em) { 
+	.i-cont, .v-cont, .if-cont, img{
 		width: calc(100vw - 3.6em);
 		height: auto;
 	}
-	img{
-		width: calc(100vw - 3.6em);
-		height: auto;
+	.t-cont{
+		width: fit-content;
+		max-width: calc(100vw - 3.6em);
 	}
 }
 img, iframe{
@@ -174,6 +176,7 @@ sup{
 a{
 	color: inherit;
 	text-decoration: underline;
+	word-break: break-all;
 }
 a.noline{
 	text-decoration: none;
