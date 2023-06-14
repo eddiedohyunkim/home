@@ -95,6 +95,8 @@ section:last-of-type {
 figure{
 	flex: none;
 	width: fit-content;
+	width: min(40em, 100vw - 3.6em);
+	max-width: calc(100vw - 3.6em);
 	height: fit-content;
 }
 figcaption{
@@ -112,10 +114,12 @@ figcaption{
 	height: min(50vh, 50vw);
 }
 .v-cont{
-/*	height: min(50vh, 50vw);*/
+	height: min(50vh, 50vw);
+	width: auto;
 }
 .if-cont{
 	height: min(50vh, 50vw);
+	width: auto;
 	z-index: -1; /* for carousel scrolling */
 }
 
