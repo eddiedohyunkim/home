@@ -1,8 +1,13 @@
 :root{
-	--ts-1-b:18px;
-	--ts-1-s:12px;
-	--ts-2-b:16px;
-	--ts-3-b:14px;
+	--ts1-b:18px;
+	--ts1-s:12px;
+	--ts2-b:16px;
+
+	--ts3-b:14px;
+	--ts3-s:10px;
+
+	--cp1:15px;
+	--cp2:12px;
 }
 html * {
 	-webkit-text-size-adjust: 100%; 
@@ -15,15 +20,15 @@ html * {
 	src: url("assets/font/Gerstner-Programm-Medium.otf") format("opentype");
 }
 html{
-	font-size: var(--ts-1-b);
+	font-size: var(--ts1-b);
 	scroll-behavior: smooth;
 	overscroll-behavior-x: contain; /* prevent browser back & forward behavior */
 }
 @media all and (max-width: 44em) { 
-	html{ font-size: var(--ts-2-b); } 
+	html{ font-size: var(--ts2-b); } 
 }
 @media all and (max-width: 24em) { 
-	html{ font-size: var(--ts-3-b); } 
+	html{ font-size: var(--ts3-b); } 
 }
 body{
 	font-family: Gerstner-ProgrammMedium-Compacted, sans-serif;
@@ -78,16 +83,22 @@ li > p:before {
 header, section{
 	display: flex;
 	width: 100%;
-	padding: 0 15px 0 15px;
-	column-gap: 15px;
+	padding: 0 var(--cp1) 0 var(--cp1);
+	column-gap: var(--cp1);
 	overflow-x: auto;
 	overscroll-behavior-x: contain; /* prevent browser back & forward behavior */
 }
+section:last-of-type {
+	padding-bottom: var(--cp1);
+}
 @media all and (max-width: 24em) { 
 	header, section{
-		padding: 0 12px 0 12px;
-		column-gap: 12px;
-	} 
+		padding: 0 var(--cp2) 0 var(--cp2);
+		column-gap: var(--cp2);
+	}
+	section:last-of-type {
+		padding-bottom: var(--cp2);
+	}
 }
 
 /*@media all and (max-width: 49em) { 
@@ -97,9 +108,7 @@ header, section{
 		flex-direction: column;
 	}
 }*/
-section:last-of-type {
-	padding-bottom: 0.8em;
-}
+
 
 /* Carousel Slides */
 figure{
@@ -107,14 +116,14 @@ figure{
 	max-width: calc(100vw - 3.6em);
 }
 figcaption{
-	font-size: 12px;
-	line-height: 15px;
+	font-size: var(--ts1-s);
+	line-height: var(--cp1);
 	font-variant-numeric: tabular-nums;
 }
 @media all and (max-width: 24em) { 
 	figcaption{
-		font-size: 10px;
-		line-height: 12px;
+		font-size: var(--ts3-s);
+		line-height: var(--cp2);
 	} 
 }
 .t-cont{
