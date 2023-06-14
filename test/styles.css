@@ -123,7 +123,6 @@ figure:has(div.if-cont){
 .if-cont{
 	height: min(50vh, 50vw);
 	z-index: -1; /* for carousel scrolling */
-	border: 2px solid red;
 }
 
 .ar16-9{ aspect-ratio: 16 / 9; }
