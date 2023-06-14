@@ -90,7 +90,7 @@
 				<p>Document</p>
 				<ul>
 					<li>
-						<p>Last updated: <span id="lastmodified"></span></p>		
+						<p>Last updated: <span id="lastmodified" class="tn"></span></p>		
 					</li>
 				</ul>
 				
@@ -437,10 +437,6 @@
 		</figure>
 	</section>
 	<script src="https://player.vimeo.com/api/player.js"></script>
-	<script type="text/javascript">
-		let oLastModif = new Date(document.lastModified);
-		console.log(oLastModif);
-		document.getElementById('lastmodified').innerHTML = oLastModif;
-	</script>
+	<script src="lastmodified.js"></script>
 </body>
 </html>
