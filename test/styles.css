@@ -95,7 +95,6 @@ section:last-of-type {
 figure{
 	flex: none;
 	width: fit-content;
-	width: min(40em, 100vw - 3.6em);
 	max-width: calc(100vw - 3.6em);
 	height: fit-content;
 }
@@ -112,6 +111,15 @@ figcaption{
 .i-cont, img{
 	width: auto;
 	height: min(50vh, 50vw);
+}
+.v-cont2{
+	width: min(48em, 100vw - 3.6em);
+/*	border: 1px solid;*/
+}
+.v-cont2vert{
+	border: 2px solid #0f0;
+	height: min(44em, 50vh);
+	width: auto;
 }
 .v-cont{
 	height: min(50vh, 50vw);
