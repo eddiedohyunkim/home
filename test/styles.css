@@ -115,6 +115,7 @@ figcaption{
 	height: min(50vh, 50vw);
 }
 .if-cont{
+	width: auto;
 	height: min(50vh, 50vw);
 	z-index: -1; /* for carousel scrolling */
 }
@@ -147,7 +148,7 @@ iframe{
 figure > div{
 	background-color: #ddd;
 }
-figure > div:has(img){
+figure > div:has(img), figure > div:has(iframe){
 	background-color: transparent;
 }
 .thm-black{
