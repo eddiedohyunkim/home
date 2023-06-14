@@ -90,7 +90,7 @@
 				<p>Document</p>
 				<ul>
 					<li>
-						<p>Last updated: 06/06/2023</p>		
+						<p>Last updated: <span id="lastmodified"></span></p>		
 					</li>
 				</ul>
 				
@@ -144,7 +144,7 @@
 		<figure>
 			<figcaption>1.1 ST Cousin</figcaption>
 			<div class="if-cont ar216-125">
-				<div style="padding:57.87% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/835316932?h=1680bfc0fc&autoplay=1&loop=1&muted=1&color=ffffff&title=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+				<div style="padding:57.87% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/835316932?h=1680bfc0fc&autoplay=1&loop=1&color=ffffff&title=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
 			</div>
 		</figure>
 		<!-- <figure>
@@ -168,7 +168,7 @@
 		<figure>
 			<figcaption>1.4 908A Poster NEW</figcaption>
 			<div class="if-cont ar4-5">
-				<div style="padding:125.08% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/833764132?h=83bfd7f08d&autoplay=1&loop=1&muted=1&color=ffffff&title=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen width="100%" height="100%"></iframe></div>
+				<div style="padding:125.08% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/833764132?h=83bfd7f08d&autoplay=1&loop=1&color=ffffff&title=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen width="100%" height="100%"></iframe></div>
 			</div>
 		</figure>
 	</section>
@@ -437,5 +437,10 @@
 		</figure>
 	</section>
 	<script src="https://player.vimeo.com/api/player.js"></script>
+	<script type="text/javascript">
+		let oLastModif = new Date(document.lastModified);
+		console.log(oLastModif);
+		document.getElementById('lastmodified').innerHTML = oLastModif;
+	</script>
 </body>
 </html>
