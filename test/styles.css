@@ -15,26 +15,25 @@ html * {
 	    -ms-text-size-adjust: 100%; 
 	        text-size-adjust: 100%;
 }
-@font-face{
-	font-family: Gerstner-ProgrammMedium-Compacted;
-	src: url("assets/font/Gerstner-Programm-Medium.otf") format("opentype");
-}
+/*@font-face{
+	font-family: "Gerstner-ProgrammMedium-Compacted";
+	src: url("assets/fonts/Gerstner-Programm-Medium.otf") format("opentype");
+}*/
 html{
 	font-size: var(--ts1-b);
 	scroll-behavior: smooth;
 	overscroll-behavior-x: contain; /* prevent browser back & forward behavior */
 }
-@media all and (max-width: 44em) { 
-	html{ font-size: var(--ts2-b); } 
-}
-@media all and (max-width: 24em) { 
-	html{ font-size: var(--ts3-b); } 
-}
+/* 44 * 18 = 792px */
+/* 44 * 16 = 704px */
+@media all and (max-width: 44em) { html{font-size: var(--ts2-b);} }
+/* 24 * 16 = 384px */
+@media all and (max-width: 24em) { html{font-size: var(--ts3-b);} }
+
 body{
-	font-family: Gerstner-ProgrammMedium-Compacted, sans-serif;
+	font-family: "Gerstner-Programm-Medium";
 	-webkit-font-smoothing: antialiased;
 	font-size: 1rem;
-	letter-spacing: 0.1px;
 	line-height: 1.2;
 }
 
@@ -147,7 +146,7 @@ figcaption{
 .ar216-125{ aspect-ratio: 216 / 125; }
 
 @media all and (max-width: 48em) { 
-	.i-cont, .v-cont, .if-cont, img{
+	.i-cont, .if-cont, img{
 		width: calc(100vw - 3.6em);
 		height: auto;
 	}
@@ -167,11 +166,8 @@ iframe{
 
 
 /* slides color */
-figure > div{
+header > figure > div{
 	background-color: #ddd;
-}
-figure > div:has(img), figure > div:has(iframe){
-	background-color: transparent;
 }
 .thm-black{
 	background-color: #000;
