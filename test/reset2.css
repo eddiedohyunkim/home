@@ -6,10 +6,10 @@
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
+del, dfn, em, figure, figcaption, img, ins, kbd, q, s, samp,
+small, strike, strong, /*sub, sup,*/ tt, var,
+center,
+dl, dt, dd, ol,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
@@ -42,17 +42,7 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-html * {
-	-webkit-text-size-adjust: 100%; 
-	   -moz-text-size-adjust: 100%; 
-	    -ms-text-size-adjust: 100%; 
-	        text-size-adjust: 100%;
-}
-*, *:before{
-	box-sizing: border-box;
+table, table caption {
+/*	border-collapse: collapse;*/
+	border-spacing: 0px;
 }
