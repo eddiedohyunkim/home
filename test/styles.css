@@ -77,7 +77,8 @@ section:last-of-type { padding-bottom: var(--cp); }
 
 /* carousel slides */
 figure{
-	flex: none;
+/*	flex: none;*/
+	flex-shrink: 0;
 	max-width: calc(100vw - 3.6em);
 }
 figcaption{
