@@ -69,11 +69,9 @@ ul > li > p:before {
 header, section{
 	display: flex;
 	width: 100%;
-/*	padding: 0 var(--cp) 0 var(--cp);*/
-	padding-left: var(--cp);
-/*	column-gap: var(--cp);*/
+	padding: 0 var(--cp) 0 var(--cp);
+	column-gap: var(--cp);
 	overflow-x: auto;
-	overscroll-behavior-x: contain; /* prevent browser back & forward behavior */
 }
 section:last-of-type { padding-bottom: var(--cp); }
 
@@ -81,7 +79,6 @@ section:last-of-type { padding-bottom: var(--cp); }
 figure{
 	flex: none;
 	max-width: calc(100vw - 3.6em);
-	margin-right: var(--cp);
 }
 figcaption{
 	font-size: var(--ts-2);
