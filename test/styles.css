@@ -15,10 +15,10 @@ html * {
 	    -ms-text-size-adjust: 100%; 
 	        text-size-adjust: 100%;
 }
-/*@font-face{
+@font-face{
 	font-family: "Gerstner-ProgrammMedium-Compacted";
 	src: url("assets/fonts/Gerstner-Programm-Medium.otf") format("opentype");
-}*/
+}
 html{
 	font-size: var(--ts1-b);
 	scroll-behavior: smooth;
@@ -31,7 +31,9 @@ html{
 @media all and (max-width: 24em) { html{font-size: var(--ts3-b);} }
 
 body{
-	font-family: "Gerstner-Programm-Medium";
+/*	font-family: "Gerstner-Programm-Medium";*/
+	font-family: "Gerstner-ProgrammMedium-Compacted";
+
 	-webkit-font-smoothing: antialiased;
 	font-size: 1rem;
 	line-height: 1.2;
