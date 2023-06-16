@@ -27,7 +27,7 @@ html{
 html{
 	font-size: var(--ts-1);
 	scroll-behavior: smooth;
-	overscroll-behavior-x: contain; /* prevent browser back & forward behavior */
+/*	overscroll-behavior-x: contain; /* prevent browser back & forward behavior */
 }
 body{
 	font-family: "Gerstner-ProgrammMedium-Compacted";
@@ -64,56 +64,45 @@ ul > li > p:before {
 	border-bottom: 1px solid;
 	border-left: 1px solid;
 }
+.txt-c > ul > li{
+	padding-bottom: 0.1em;
+}
+
+
 
 /* carousel */
 header, section{
+	box-sizing: border-box;
 	display: flex;
 	width: 100%;
 	padding: 0 var(--cp) 0 var(--cp);
-	padding-left: var(--cp);
 	column-gap: var(--cp);
 	overflow-x: auto;
+	scroll-behavior: smooth;
 }
 section:last-of-type { padding-bottom: var(--cp); }
-
-/*body > * > figure:last-of-type{
-	position: relative;
-}
-body > * > figure:last-of-type:after{
-	content: "";
-	width: var(--cp);
-	position: absolute;
-	background-color: red;
-	top: 0;
-	bottom:0;
-	right: calc(var(--cp) * -1);
-}*/
 
 /* carousel slides */
 figure{
 	flex: none;
-	max-width: calc(100vw - 3.6em);
 }
 figcaption{
 	font-size: var(--ts-2);
 	line-height: var(--cp);
 	font-variant-numeric: tabular-nums;
 }
-.t-cont{
+.txt-c{
 	padding: 0.8em 1em;
-	max-width: 40em;
+	max-width: min(40em, 100vw - 3.6em);
 	word-wrap: break-word;
 	hyphens: none;
 }
-.i-cont, .if-cont, img{
+.img-c, .ifr-c, img{
 	width: auto;
 	height: min(50vh, 50vw);
 }
 @media all and (max-width: 48em) { 
-	.t-cont{
-		max-width: calc(100vw - 3.6em);
-	}
-	.i-cont, .if-cont, img{
+	.img-c, .ifr-c, img{
 		width: calc(100vw - 3.6em);
 		height: auto;
 	}
@@ -126,8 +115,8 @@ iframe{ border: 0; }
 
 
 /* slides color */
-header > figure > .t-cont { background-color: #ddd; }
-section > figure > .t-cont{ background-color: #000; color: #fff; }
+header > figure > .txt-c { background-color: #ddd; }
+section > figure > .txt-c{ background-color: #000; color: #fff; }
 
 
 /* type styling */
@@ -139,9 +128,23 @@ sup{
 }
 .tn{ font-variant-numeric: tabular-nums; }
 .df{ font-variant-numeric: diagonal-fractions; }
-a{
+.cs{
+	-moz-font-feature-settings: 'case';
+	-webkit-font-feature-settings: 'case';
+	font-feature-settings: 'case' on;
+}
+/*a{
 	color: inherit;
 	text-decoration: underline;
 	word-break: break-all;
 }
-a.noline{ text-decoration: none; }
+a.noline{ text-decoration: none; }*/
+
+a{
+	color: inherit;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 1px;
+}
+a.nl{
+	text-decoration: none;
+}
