@@ -87,6 +87,7 @@ section > figure:last-of-type:after, header > figure:last-of-type:after{
 	bottom:0;
 	right: calc(var(--cp) * -1);
 }
+
 /* carousel slides */
 figure{
 	flex: none;
