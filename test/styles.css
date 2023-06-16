@@ -69,24 +69,25 @@ ul > li > p:before {
 header, section{
 	display: flex;
 	width: 100%;
-/*	padding: 0 var(--cp) 0 var(--cp);*/
+	padding: 0 var(--cp) 0 var(--cp);
 	padding-left: var(--cp);
 	column-gap: var(--cp);
 	overflow-x: auto;
 }
 section:last-of-type { padding-bottom: var(--cp); }
 
-section > figure:last-of-type, header > figure:last-of-type{
+/*body > * > figure:last-of-type{
 	position: relative;
 }
-section > figure:last-of-type:after, header > figure:last-of-type:after{
+body > * > figure:last-of-type:after{
 	content: "";
 	width: var(--cp);
 	position: absolute;
+	background-color: red;
 	top: 0;
 	bottom:0;
 	right: calc(var(--cp) * -1);
-}
+}*/
 
 /* carousel slides */
 figure{
