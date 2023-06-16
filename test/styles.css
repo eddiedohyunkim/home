@@ -23,7 +23,6 @@ html{
 html{
 	font-size: var(--ts-1);
 	scroll-behavior: smooth;
-/*	overscroll-behavior-x: contain; /* prevent browser back & forward behavior */
 }
 body{
 	font-family: "gerstner_programmmedium";
@@ -93,12 +92,12 @@ figcaption{
 	word-wrap: break-word;
 	hyphens: none;
 }
-.img-c, .ifr-c, img{
+.ifr-c, img{
 	width: auto;
 	height: min(50vh, 50vw);
 }
 @media all and (max-width: 48em) { 
-	.img-c, .ifr-c, img{
+	.ifr-c, img{
 		width: calc(100vw - 3.6em);
 		height: auto;
 	}
