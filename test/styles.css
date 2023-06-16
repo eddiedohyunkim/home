@@ -73,7 +73,6 @@ header, section{
 	padding-left: var(--cp);
 	column-gap: var(--cp);
 	overflow-x: auto;
-	border: 1px solid;
 }
 section:last-of-type { padding-bottom: var(--cp); }
 
