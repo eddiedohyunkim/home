@@ -48,7 +48,7 @@ ul > li:before {
 ul > li:last-child:before {
 	border-left: 0;
 }
-ul > li > p:before {
+ul > li:after {
 	content: "";
 	position: absolute;
 	display: block;
@@ -92,6 +92,12 @@ figcaption{
 	word-wrap: break-word;
 	hyphens: none;
 }
+/*.ifr-c, img{
+	width: auto;
+	max-width: calc(100vw - 3.6em);
+	height: min(50vh, 50vw);
+	min-height: auto;
+}*/
 .ifr-c, img{
 	width: auto;
 	height: min(50vh, 50vw);
