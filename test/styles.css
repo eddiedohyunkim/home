@@ -137,6 +137,10 @@ sup{
 	vertical-align: text-top;
 	font-variant-numeric: tabular-nums;
 }
+span.nb{
+	white-space: nowrap;
+/*	word-break: keep-all;*/
+}
 .tn{ font-variant-numeric: tabular-nums; }
 .df{ font-variant-numeric: diagonal-fractions; }
 .cs{
