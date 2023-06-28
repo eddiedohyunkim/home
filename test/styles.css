@@ -92,12 +92,6 @@ figcaption{
 	word-wrap: break-word;
 	hyphens: none;
 }
-/*.ifr-c, img{
-	width: auto;
-	max-width: calc(100vw - 3.6em);
-	height: min(50vh, 50vw);
-	min-height: auto;
-}*/
 .ifr-c, img{
 	width: auto;
 	height: min(50vh, 50vw);
@@ -117,7 +111,7 @@ iframe{ border: 0; }
 
 
 /* slides color */
-header > figure > .txt-c { background-color: #DADBE0; }
+header > figure > .txt-c { background-color: #E1E3E5; }
 section > figure > .txt-c{ background-color: #000; color: #fff; }
 .stripe{
   background: repeating-linear-gradient(
@@ -165,7 +159,7 @@ a.nl{
 }
 .footnote{ position: relative; }
 .footnote:before{
-	content:attr(symbol);
+	content:attr(data-symbol);
 	display: block;
 	position: absolute;
 	width: 1rem;
