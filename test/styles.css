@@ -60,7 +60,7 @@ ul > li:after {
 	border-left: 1px solid;
 }
 .txt-c > ul > li{
-	padding-bottom: 0.1em;
+/*	padding-bottom: 0.1em;*/
 }
 
 
@@ -111,13 +111,23 @@ figcaption{
 .ar16-9{ aspect-ratio: 16 / 9; }
 .ar4-5 { aspect-ratio: 4 / 5; }
 .ar216-125{ aspect-ratio: 216 / 125; }
+.ar100-194{ aspect-ratio: 100 / 194; }
 img, iframe{ display: block; }
 iframe{ border: 0; }
 
 
 /* slides color */
-header > figure > .txt-c { background-color: #ddd; }
+header > figure > .txt-c { background-color: #DADBE0; }
 section > figure > .txt-c{ background-color: #000; color: #fff; }
+.stripe{
+  background: repeating-linear-gradient(
+    45deg,
+    #ddd,
+    #ddd 1em,
+    #eee 1em,
+    #eee 2em
+  );
+}
 
 
 /* type styling */
@@ -148,4 +158,13 @@ a{
 }
 a.nl{
 	text-decoration: none;
+}
+.footnote{ position: relative; }
+.footnote:before{
+	content:attr(symbol);
+	display: block;
+	position: absolute;
+	width: 1rem;
+	left: -1rem;
+	text-align: right;
 }
