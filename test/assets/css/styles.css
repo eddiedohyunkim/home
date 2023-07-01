@@ -85,7 +85,7 @@ figcaption{
 }
 .txt-c{
 	padding: 0.8rem 1rem;
-	max-width: min(36rem, 100vw - 3.6rem);
+	max-width: min(35rem, 100vw - 3.6rem);
 	word-wrap: break-word;
 	hyphens: none;
 }
