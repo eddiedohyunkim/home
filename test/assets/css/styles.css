@@ -29,6 +29,7 @@ body{
 	-webkit-font-smoothing: antialiased;
 	font-size: 1em;
 	line-height: 1.2;
+	overscroll-behavior-x: none;
 }
 
 /* ul tree */
@@ -82,6 +83,7 @@ figcaption{
 	font-size: var(--ts-2);
 	line-height: var(--cp);
 	font-variant-numeric: tabular-nums;
+	max-width: calc(100vw - 3.6rem);
 }
 .txt-c{
 	padding: 0.8rem 1rem;
@@ -101,24 +103,17 @@ figcaption{
 }
 .ar16-9{ aspect-ratio: 16 / 9; }
 .ar4-5 { aspect-ratio: 4 / 5; }
+.ar8-5 { aspect-ratio: 8 / 5; }
+.ar22-17 { aspect-ratio: 22 / 17; }
 .ar216-125{ aspect-ratio: 216 / 125; }
 .ar100-194{ aspect-ratio: 100 / 194; }
-img, iframe{ display: block; }
+img, iframe{ display: block;}
 iframe{ border: 0; }
 
 
 /* slides color */
 header > figure > .txt-c { background-color: #E1E3E5; }
 section > figure > .txt-c{ background-color: #000; color: #fff; }
-.stripe{
-  background: repeating-linear-gradient(
-    45deg,
-    #ddd,
-    #ddd 1em,
-    #eee 1em,
-    #eee 2em
-  );
-}
 
 
 /* type styling */
@@ -136,30 +131,11 @@ sup{
 	-webkit-font-feature-settings: 'case';
 	font-feature-settings: 'case' on;
 }
-/*a{
-	color: inherit;
-	text-decoration: underline;
-	word-break: break-all;
-}
-a.noline{ text-decoration: none; }*/
-
 a{
 	color: inherit;
-/*	text-decoration: none;*/
-	text-decoration-thickness: 1px;
 	text-decoration-line: underline;
-/*	text-underline-offset: 2px;*/
 	text-underline-position: from-font;
 }
 a.nl{
 	text-decoration: none;
-}
-.footnote{ position: relative; }
-.footnote:before{
-	content:attr(data-symbol);
-	display: block;
-	position: absolute;
-	width: 1rem;
-	left: -1rem;
-	text-align: right;
 }
