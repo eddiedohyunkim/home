@@ -104,6 +104,7 @@ figcaption{
 .ar1-1 { aspect-ratio: 1 / 1; }
 .ar4-5 { aspect-ratio: 4 / 5; }
 .ar8-5 { aspect-ratio: 8 / 5; }
+.ar16-9 { aspect-ratio: 16 / 9; }
 .ar216-125{ aspect-ratio: 216 / 125; }
 img, iframe{ display: block;}
 iframe{ border: 0; }
