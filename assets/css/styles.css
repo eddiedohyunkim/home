@@ -134,6 +134,7 @@ a{
 	color: inherit;
 	text-decoration-line: underline;
 	text-underline-position: from-font;
+	word-wrap: break-word;
 }
 a.nl{
 	text-decoration: none;
