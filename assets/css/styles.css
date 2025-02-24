@@ -30,6 +30,7 @@ body{
 	font-size: 1em;
 	line-height: 1.2;
 	overscroll-behavior-x: none;
+	letter-spacing: 0.01em;
 }
 
 /* ul tree */
@@ -87,7 +88,7 @@ figcaption{
 }
 .txt-c{
 	padding: 0.8rem 1rem;
-	max-width: min(35rem, 100vw - 3.6rem);
+	max-width: min(36rem, 100vw - 3.6rem);
 /*	word-wrap: break-word;*/
 /*	hyphens: none;*/
 }
@@ -105,6 +106,7 @@ figcaption{
 .ar4-5 { aspect-ratio: 4 / 5; }
 .ar8-5 { aspect-ratio: 8 / 5; }
 .ar16-9 { aspect-ratio: 16 / 9; }
+.ar9-16 { aspect-ratio: 9 / 16; }
 .ar216-125{ aspect-ratio: 216 / 125; }
 img, iframe{ display: block;}
 iframe{ border: 0; }
