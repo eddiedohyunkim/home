@@ -25,7 +25,7 @@ html{
 	scroll-behavior: smooth;
 }
 body{
-	font-family: 'Folio Std', sans-serif;
+	font-family: 'FolioStd-Medium', 'Folio Std', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-size: 1em;
 	line-height: 1.2;
