@@ -1,7 +1,8 @@
 @font-face {
-    font-family: 'gerstner_programmmedium';
-    src: url('../fonts/gerstner-programm-medium-webfont.woff2') format('woff2'),
-         url('../fonts/gerstner-programm-medium-webfont.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Folio Std';
+    src: url('FolioStd-Medium.woff2') format('woff2'),
+        url('FolioStd-Medium.woff') format('woff');
+    font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
