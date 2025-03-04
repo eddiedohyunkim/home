@@ -1,8 +1,7 @@
 @font-face {
-    font-family: 'Folio Std';
-    src: url('FolioStd-Medium.woff2') format('woff2'),
-        url('FolioStd-Medium.woff') format('woff');
-    font-weight: 500;
+    font-family: 'FolioStd-Medium';
+    src: url('../fonts/FolioStd-Medium.otf');
+    font-weight: normal;
     font-style: normal;
     font-display: block;
 }
