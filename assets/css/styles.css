@@ -56,8 +56,8 @@ ul > li:after {
 	display: block;
 	top: 0;
 	left: 0.1rem;
-	width: 1.4ex;
-	height: 1.75ex;
+	width: 0.8em;
+	height: 1em;
 	border-bottom: 1px solid;
 	border-left: 1px solid;
 }
