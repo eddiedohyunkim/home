@@ -25,13 +25,12 @@ html{
 	scroll-behavior: smooth;
 }
 body{
-	font-family: 'FolioStd-Medium', 'Folio Std', sans-serif;
-	-webkit-font-smoothing: antialiased;
-	font-size: 1em;
-	line-height: 1.2;
-	overscroll-behavior-x: none;
-/*	letter-spacing: 0.01em;*/
-	word-spacing: -0.03em;
+	font-family: Arial, sans-serif;
+    font-size: 1em;
+    line-height: 1.25;
+    overscroll-behavior-x: none;
+    letter-spacing: 0.05em;
+    -webkit-text-stroke: 0.02em;
 }
 
 /* ul tree */
@@ -57,7 +56,7 @@ ul > li:after {
 	display: block;
 	top: 0;
 	left: 0.1rem;
-	width: 1.5ex;
+	width: 1.4ex;
 	height: 1.75ex;
 	border-bottom: 1px solid;
 	border-left: 1px solid;
@@ -89,8 +88,8 @@ figcaption{
 	margin: 1px 0 -1px 0;
 }
 .txt-c{
-	padding: 0.8rem 1rem 0.6rem 1rem;
-	max-width: min(32rem, 100vw - 3.6rem);
+	padding: 0.8rem 1rem;
+	max-width: min(35rem, 100vw - 3.6rem);
 /*	word-wrap: break-word;*/
 /*	hyphens: none;*/
 }
