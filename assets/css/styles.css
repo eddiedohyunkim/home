@@ -3,20 +3,20 @@
 /* 24 * 16 = 384px */
 html{ 
 	--ts-1: 18px; 
-	--ts-2: 12px;
+	--ts-2: 11px;
 	  --cp: 15px; 
 }
 @media all and (max-width: 44em) { 
 	html{ 
 		--ts-1: 16px;
-		--ts-2: 11px;
+		--ts-2: 10px;
 		  --cp: 14px;
 	} 
 }
 @media all and (max-width: 24em) { 
 	html{
 		--ts-1: 14px; 
-		--ts-2: 10px;
+		--ts-2: 9px;
 		  --cp: 12px;
 	} 
 }
@@ -72,6 +72,7 @@ header, section{
 	padding: 0 var(--cp) 0 var(--cp);
 	column-gap: var(--cp);
 	overflow-x: auto;
+	overflow-y: hidden;
 	scroll-behavior: smooth;
 }
 section:last-of-type { padding-bottom: var(--cp); }
@@ -88,7 +89,7 @@ figcaption{
 	margin: 1px 0 -1px 0;
 }
 .txt-c{
-	padding: 0.8rem 1rem;
+	padding: 0.7rem 1rem 0.85rem 1rem;
 	max-width: min(35rem, 100vw - 3.6rem);
 /*	word-wrap: break-word;*/
 /*	hyphens: none;*/
