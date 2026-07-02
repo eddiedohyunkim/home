@@ -29,9 +29,8 @@ body{
     font-size: 1em;
     line-height: 1.25;
     overscroll-behavior-x: none;
-    letter-spacing: 0.05em;
+    /*letter-spacing: 0.05em;*/
     /*-webkit-text-stroke: 0.02em;*/
-
     font-weight: bold;
     letter-spacing: 0.01em;
     -webkit-font-smoothing: antialiased;
